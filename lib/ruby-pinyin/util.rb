@@ -22,6 +22,7 @@ module PinYin
           end
         end
       end
+      return reading.concat("5") if with_tone # 找不到带声调的拼音字母说明是轻声，用数字5表示
       reading
     end
 
